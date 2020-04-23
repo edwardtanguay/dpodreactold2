@@ -5,7 +5,7 @@ import './App.css';
 function App() {
     return (
         <div className="App">
-            <h1>Welcome to Datapod for React version 0.00.01.</h1>
+            <p>Welcome to Datapod for React version 0.00.01.</p>
         </div>
     );
 }
