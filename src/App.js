@@ -6,8 +6,9 @@ function App() {
         <div className="App">
             <p>Welcome to Datapod for React.</p>
             <ul>
-                <li>0.00.01 initial site</li>
-                <li>0.00.02 added version info</li>
+                <li>0.0.0.003 fixed versions to be more standard n.n.n</li>
+                <li>0.0.0.002 added version info</li>
+                <li>0.0.0.001 initial site</li>
             </ul>
         </div>
     );
