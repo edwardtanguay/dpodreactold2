@@ -6,8 +6,8 @@ import { FaListAlt } from 'react-icons/fa';
 function App() {
 	return (
 		<div className="container mt-4">
-			<ul class="nav nav-pills">
-				<li className="nav-item"><a href="#" className="nav-link">Welcome</a></li>
+			<ul class="nav nav-pills flex-column flex-md-row">
+				<li className="nav-item"><a href="#" className="nav-link disabled font-weight-bold">Datapod for React</a></li>
 				<li className="nav-item"><a href="#" className="nav-link active">Info</a></li>
 				<li className="nav-item"><a href="#" className="nav-link">Create Item</a></li>
 				<li className="nav-item"><a href="#" className="nav-link">Create Page</a></li>
