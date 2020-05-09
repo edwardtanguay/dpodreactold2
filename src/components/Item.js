@@ -2,7 +2,7 @@ import React from 'react';
 
 function Item() {
 	return (
-		<div>this is an item</div>
+		<div>make a choice</div>
 	)
 }
 
