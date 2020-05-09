@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { FaListAlt } from 'react-icons/fa';
 
 function App() {
 	return (
@@ -14,6 +16,7 @@ function App() {
 				<li>0.0.0.001 initial site</li>
 				<li>initial state</li>
 			</ul>
+			<FaListAlt />
 		</div>
 	);
 }
