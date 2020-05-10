@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 
 class PageWelcome extends Component {
-	constructor() {
-		super();
-	}
 	render() {
 		return (
 			<h1>Welcome</h1>
