@@ -1,0 +1,378 @@
+[
+    {
+        "front" : "find out what kind of command a command is, e.g. `ls`",
+        "back" : "type ls"
+    },
+    {
+        "front" : "how to find out your shell",
+        "back" : "echo $0"
+    },
+    {
+        "front" : "how to get a detailed list of files in a directory",
+        "back" : "ll"
+    },
+    {
+        "front" : "get back file from staging area to working directory, i.e. unstage a file",
+        "back" : "git reset [file]"
+    },
+    {
+        "front" : "show simplified log \"hash - title - author\"",
+        "back" : "git log --pretty=format:\"%h - %s - %an\""
+    },
+    {
+        "front" : "discard changes in working directory (before add)",
+        "back" : "git checkout -- [file]"
+    },
+    {
+        "front" : "remove file from working directory and add deletion to staging area",
+        "back" : "git rm [file]"
+    },
+    {
+        "front" : "how to find out what the master is",
+        "back" : "git remote show origin (you have to login)"
+    },
+    {
+        "front" : "list operations made on local repository",
+        "back" : "git reflog"
+    },
+    {
+        "front" : "save local copy temporarily",
+        "back" : "git stash save pdf-junk, git stash pop, git stash list, git stash pop stash@{0}, get stash drop"
+    },
+    {
+        "front" : "how to get Github project locally",
+        "back" : "git clone https://github.com/edwardtanguay/testinfo.git 'test001'"
+    },
+    {
+        "front" : "how to get updates from Github code locally and copy back up",
+        "back" : "git pull, git push"
+    },
+    {
+        "front" : "change user name",
+        "back" : "git config --global user.name \"Hans Schmidt\""
+    },
+    {
+        "front" : "delete branch on Github",
+        "back" : "git push origin :issue001"
+    },
+    {
+        "front" : "change email",
+        "back" : "git config --global user.email \"hans@nnn.com\""
+    },
+    {
+        "front" : "how to get git to remember your github credentials",
+        "back" : "git config --global credential.helper store"
+    },
+    {
+        "front" : "count how many items in array have property of certain value",
+        "back" : "const numberSelected = this.categories.filter(x => x.included).length;"
+    },
+    {
+        "front" : "change values of a property on each item in an array",
+        "back" : "this.categories.forEach((x) => { x.included = false; })"
+    },
+    {
+        "front" : "how to add and commit",
+        "back" : "git commit -am \"changed header\""
+    },
+    {
+        "front" : "how to see if there is anything to push *(if nothing, then \"Everything up-to-date\")*",
+        "back" : "git push --dry-run"
+    },
+    {
+        "front" : "how to change the word your cursor is on",
+        "back" : "cw (change word) or ciw (change inner word)"
+    },
+    {
+        "front" : "how to duplicate line",
+        "back" : "yy p"
+    },
+    {
+        "front" : "how to list all commits as \"hash - date - title - author\"",
+        "back" : "git log --pretty=format:\"%h - %ci - %s - %an\""
+    },
+    {
+        "front" : "show list of all used categories in order",
+        "back" : "select DISTINCT trim(category) from flashcards order by category"
+    },
+    {
+        "front" : "show all where category is one of three values",
+        "back" : "select * from flashcards where category in ('linux', 'git', 'javascript')"
+    },
+    {
+        "front" : "how to add all changes from working directory to index",
+        "back" : "git add -A"
+    },
+    {
+        "front" : "list abbreviated log",
+        "back" : "git log --online"
+    },
+    {
+        "front" : "how to undo a commit",
+        "back" : "git log --oneline **then** git revert 068b100"
+    },
+    {
+        "front" : "how to find which packages need to be updated",
+        "back" : "npm outdated"
+    },
+    {
+        "front" : "how to push local branch to remote",
+        "back" : "git push -u origin et/bugfix/clean-up-code-copy-box"
+    },
+    {
+        "front" : "how to change git editor for commits",
+        "back" : "git config --global core.editor \"nano\" **(or \"vim\")**"
+    },
+    {
+        "front" : "only show the last commit",
+        "back" : "git log -1"
+    },
+    {
+        "front" : "how to discard changes to a file in working directory",
+        "back" : "git checkout -- index.html"
+    },
+    {
+        "front" : "how to mark a file as deleted in the index",
+        "back" : "git rm --cached index.html"
+    },
+    {
+        "front" : "how to see all files in working directory that are not being tracked yet",
+        "back" : "git ls-files --others --exclude-standard"
+    },
+    {
+        "front" : "toggle between two zooms",
+        "back" : "back-tick key"
+    },
+    {
+        "front" : "fit image in window",
+        "back" : "ctrl-shift-j"
+    },
+    {
+        "front" : "deselect selection",
+        "back" : "ctrl-shift-a"
+    },
+    {
+        "front" : "open file",
+        "back" : "double-click in main window area"
+    },
+    {
+        "front" : "how to set the GitHub repository for a new local directory",
+        "back" : "git remote add origin https://github.com/edwardtanguay/nodeExpress4.git && git push -u origin master"
+    },
+    {
+        "front" : "how to reset all tracked files in workspace back",
+        "back" : "git checkout -- ."
+    },
+    {
+        "front" : "how to clone a branch of a GitHub repository",
+        "back" : "git clone -b 001-two-page-base-functionality https://github.com/edwardtanguay/eleventy4.git eleventy001"
+    },
+    {
+        "front" : "how to see what files I am about to push",
+        "back" : "git diff --stat --cached origin/master"
+    },
+    {
+        "front" : "how to get the latest changes from master into your branch",
+        "back" : "git merge origin/master"
+    },
+    {
+        "front" : "how to find out what an alias is mapped to",
+        "back" : "type ll"
+    },
+    {
+        "front" : "how to remove untracked files and directories in working directory, e.g. a whole bunch of log files and test directories that you created but don't want to add to the repository",
+        "back" : "git clean -fd  >>> (f = force, d = directories)"
+    },
+    {
+        "front" : "how to browse through directory and start HTML websites on port",
+        "back" : "browser-sync start -s --directory --files=*/**"
+    },
+    {
+        "front" : "how to install local http server",
+        "back" : "`npm install http-server -g` then e.g. `http-server -p 3333`"
+    },
+    {
+        "front" : "how to make command executable, and remove it",
+        "back" : "chmod u+x doit (chmod u-x doit)"
+    },
+    {
+        "front" : "how to send just one changed file from working directory all the way to local repository",
+        "back" : "git commit *todo.txt -m \"small changes to todo file\""
+    },
+    {
+        "front" : "program that shows keys you are typing for tutorials and workshops",
+        "back" : "ODS Hot Keys"
+    },
+    {
+        "front" : "how to produce filler text in a paragraph element",
+        "back" : "p>lorem"
+    },
+    {
+        "front" : "what does the style-loader do?",
+        "back" : "injects css into head of the DOM"
+    },
+    {
+        "front" : "find all files in `systemItems` which have the text \"ver\" in them",
+        "back" : "find systemItems -iname \"*ver*\""
+    },
+    {
+        "front" : "find all empty files",
+        "back" : "find . -empty"
+    },
+    {
+        "front" : "find all JavaScript files that have the word \"array\" in them",
+        "back" : "find . -name \"*\" | grep -i \".*array.*\\.js$\""
+    },
+    {
+        "front" : "create a file listing all JavaScript files that have the word \"item\" in the name EXCEPT in the `node_modules` directory",
+        "back" : "find . -name \"*\" -not -path \"./node_modules/*\" | grep -i \".*item.*\\.js$\" > text.txt"
+    },
+    {
+        "front" : "find all files with \"parse\" in the name EXCEPT in the directory `node_modules`",
+        "back" : "find . -iname \"*parse*\" -not -path \"./node_modules/*\""
+    },
+    {
+        "front" : "how to get the remote GitHub fetch URL of a local repository",
+        "back" : "git remote -v"
+    },
+    {
+        "front" : "rectangle tool",
+        "back" : "r"
+    },
+    {
+        "front" : "unselect everything",
+        "back" : "ctrl-shift-a"
+    },
+    {
+        "front" : "how to uninstall a package",
+        "back" : "npm un babel-node"
+    },
+    {
+        "front" : "how to merge into master",
+        "back" : "git checkout master && git merge et/feat/new-checkbox"
+    },
+    {
+        "front" : "make new branch",
+        "back" : "git checkout -b et/feat/new-checkbox"
+    },
+    {
+        "front" : "how to delete a local branch",
+        "back" : "git branch -d et/bugfix/clean-up-code-copy-box"
+    },
+    {
+        "front" : "show all branches, local and remote",
+        "back" : "git branch -a"
+    },
+    {
+        "front" : "what is the basic command to start browser-sync",
+        "back" : "browser-sync start -s -f \"**/*\""
+    },
+    {
+        "front" : "what does the ampersand in `import Component from '@/components/component'` mean",
+        "back" : "it means from the root of the project and avoids you having to write things like: import Component from '../../../../components/component'"
+    },
+    {
+        "front" : "ellipse select tool",
+        "back" : "e"
+    },
+    {
+        "front" : "what does `@import 'custom.css';` mean",
+        "back" : "is used to import style rules from other style sheets"
+    },
+    {
+        "front" : "what do the double asterisks in `--files \"/assets/**/*.*\"` mean",
+        "back" : "any file with any extension in any subdirectory, including the current one"
+    },
+    {
+        "front" : "how to start browser-sync with a config file after you run `browser-sync init`",
+        "back" : "browser-sync start --config bs-config.js"
+    },
+    {
+        "front" : "how to specific the main file as \"index.htm\"",
+        "back" : "browser-sync start --server --files \"**/*\" --index \"index.htm\""
+    },
+    {
+        "front" : "delete a remote branch that still shows with `git branch -a` but doesn't actually exist",
+        "back" : "git remote prune origin"
+    },
+    {
+        "front" : "get the name of the commit that is about to be pushed",
+        "back" : "git log --oneline -1"
+    },
+    {
+        "front" : "smaller command to find all JavaScript files in any directory except for `node_modules`",
+        "back" : "find . -iname \"*item*.js\" -not -path \"./node_modules/*\""
+    },
+    {
+        "front" : "how to completely reset working directory, e.g. all new and tracked files",
+        "back" : "git clean -df && git checkout -- ."
+    },
+    {
+        "front" : "swap words",
+        "back" : "dwwP"
+    },
+    {
+        "front" : "how to hide all other layers but one",
+        "back" : "SHIFT-eye"
+    },
+    {
+        "front" : "lasso tool",
+        "back" : "f"
+    },
+    {
+        "front" : "see which global packages are installed",
+        "back" : "npm list -g --depth=0"
+    },
+    {
+        "front" : "ALT-42",
+        "back" : ""
+    },
+    {
+        "front" : "merge all layers into new layer",
+        "back" : "Layer > New From Visible"
+    },
+    {
+        "front" : "create new layer",
+        "back" : "ctrl-shift-n"
+    },
+    {
+        "front" : "how to see release notes again",
+        "back" : "SHIFT-CTRL-P code: show release notes"
+    },
+    {
+        "front" : "how to uninstall a global package",
+        "back" : "npm uninstall -g create-react-app"
+    },
+    {
+        "front" : "how to enable mouse wheel to switch tabs",
+        "back" : "ctrl-, scrollToSwitchTabs"
+    },
+    {
+        "front" : "how to install create-react-app with classes instead of functions",
+        "back" : "create-react-app my-app --scripts-version react-scripts@^2"
+    },
+    {
+        "front" : "if your menus disappear",
+        "back" : "edit > preferences > windows management > reset"
+    },
+    {
+        "front" : "list all files and directories that begin with \"r\"",
+        "back" : "ls -d r*"
+    },
+    {
+        "front" : "reduce the layer size to the content of what you drew",
+        "back" : "select layer > layer > crop to content"
+    },
+    {
+        "front" : "responsible menu",
+        "back" : "<ul class=\"nav nav-pills flex-column flex-md-row\">"
+    },
+    {
+        "front" : "save content of layer at image",
+        "back" : "select layer > layer > crop to content > ctrl-c > ctrl-shift-v > ctrl-e"
+    },
+    {
+        "front" : "what to do if you get the error \"Maximum call stack size exceeded on npm install\"",
+        "back" : "npm cache clean --force"
+    }
+]
