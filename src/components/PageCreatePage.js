@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-function CreatePage() {
-	return (
-		<h1>Create Page</h1>
-	)
+class PageCreatePage extends Component {
+	constructor() {
+		super();
+	}
+	render() {
+		return (
+			<h1>Create Page</h1>
+		)
+	}
 }
 
-export default CreatePage;
+export default PageCreatePage;

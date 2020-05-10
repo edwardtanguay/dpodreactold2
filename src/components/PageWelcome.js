@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-function PageWelcome() {
-	return (
-		<h1>Welcome</h1>
-	)
+class PageWelcome extends Component {
+	constructor() {
+		super();
+	}
+	render() {
+		return (
+			<h1>Welcome</h1>
+		)
+	}
 }
 
 export default PageWelcome;

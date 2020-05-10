@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-function PageAbout() {
-	return (
-		<h1>About</h1>
-	)
+class PageAbout extends Component {
+	constructor() {
+		super();
+	}
+	render() {
+		return (
+			<h1>About</h1>
+		)
+	}
 }
 
 export default PageAbout;
