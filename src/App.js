@@ -15,6 +15,12 @@ import { without } from 'lodash';
 // const qstr = require('./components/qtools/qstr');
 
 class App extends Component {
+	constructor() {
+		super();
+		this.state = {
+			"version": "0.0.3"
+		}
+	}
 	// test of lodash
 	showMessage() {
 		let names = ["sky", "earth", "wind", "fire"];
@@ -42,7 +48,8 @@ class App extends Component {
 						</li>
 					</ul>
 				</nav>
-				<main className="container mt-4">
+				<p className="tiny mt-2 mb-0 pb-0 small mr-4 text-right">Version {this.state.version}</p>
+				<main className="container mt-1 pl-0 pr-4">
 					<Switch>
 						{/* <Route path="/all" component={PageAll} flashcards={this.state.flashcards} /> */}
 						<Route path="/all" component={PageAll} />
