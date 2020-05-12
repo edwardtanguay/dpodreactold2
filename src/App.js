@@ -10,17 +10,39 @@ import PageGit from './components/PageGit';
 import PageLinux from './components/PageLinux';
 import { NavLink } from 'react-router-dom';
 
+import { without } from 'lodash';
+//import { without} from './components/qtools/qstr';
+// const qstr = require('./components/qtools/qstr');
+
 class App extends Component {
+	// test of lodash
+	showMessage() {
+		let names = ["sky", "earth", "wind", "fire"];
+		const name = names[1];
+		names = without(names, name);
+		return names;
+	}
 	render() {
 		return (
-			<main className="container mt-4">
-				<BrowserRouter>
-					<ul className="nav nav-pills text-left pl-4 pb-3">
-						<li className="nav-item"><NavLink to="/all" className="nav-link text-dark"><GiStack /> All</NavLink></li>
-						<li className="nav-item"><NavLink to="/git" className="nav-link text-dark"><GiStack /> Git</NavLink></li>
-						<li className="nav-item"><NavLink to="/gimp" className="nav-link text-dark"><GiStack /> Gimp</NavLink></li>
-						<li className="nav-item"><NavLink to="/linux" className="nav-link text-dark"><GiStack /> Linux</NavLink></li>
+
+			<BrowserRouter>
+				<header class="navbar navbar-expand-md navbar-dark bg-dark">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<NavLink to="/all" className="nav-link"><GiStack /> All</NavLink>
+						</li>
+						<li class="nav-item">
+							<NavLink to="/git" className="nav-link"><GiStack /> Git</NavLink>
+						</li>
+						<li class="nav-item">
+							<NavLink to="/gimp" className="nav-link"><GiStack /> Gimp</NavLink>
+						</li>
+						<li class="nav-item">
+							<NavLink to="/linux" className="nav-link"><GiStack /> Linux</NavLink>
+						</li>
 					</ul>
+				</header>
+				<main className="container mt-4">
 					<Switch>
 						{/* <Route path="/all" component={PageAll} flashcards={this.state.flashcards} /> */}
 						<Route path="/all" component={PageAll} />
@@ -28,8 +50,11 @@ class App extends Component {
 						<Route path="/gimp" component={PageGimp} />
 						<Route path="/linux" component={PageLinux} />
 					</Switch>
-				</BrowserRouter>
-			</main>
+					<hr />
+					<h4>Testing</h4>
+					<div>{this.showMessage()}</div>
+				</main>
+			</BrowserRouter>
 		);
 	}
 }
