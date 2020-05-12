@@ -26,7 +26,7 @@ class App extends Component {
 		return (
 
 			<BrowserRouter>
-				<header class="navbar navbar-expand-md navbar-dark bg-dark">
+				<nav class="navbar navbar-expand navbar-dark bg-dark">
 					<ul class="navbar-nav">
 						<li class="nav-item">
 							<NavLink to="/all" className="nav-link"><GiStack /> All</NavLink>
@@ -41,7 +41,7 @@ class App extends Component {
 							<NavLink to="/linux" className="nav-link"><GiStack /> Linux</NavLink>
 						</li>
 					</ul>
-				</header>
+				</nav>
 				<main className="container mt-4">
 					<Switch>
 						{/* <Route path="/all" component={PageAll} flashcards={this.state.flashcards} /> */}
