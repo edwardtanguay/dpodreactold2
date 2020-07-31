@@ -1,6 +1,11 @@
 [
 	{
 		"category": "git",
+		"front": "NEW: how to set the GitHub repository for a new local directory",
+		"back": "NEW: git remote add origin https://github.com/edwardtanguay/nodeExpress4.git && git push -u origin master"
+	},
+	{
+		"category": "git",
 		"front": "how to set the GitHub repository for a new local directory",
 		"back": "git remote add origin https://github.com/edwardtanguay/nodeExpress4.git && git push -u origin master"
 	},
